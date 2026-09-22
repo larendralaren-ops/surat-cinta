@@ -4,7 +4,7 @@
 const CONFIG = {
   recipientName: "Sayang",            // GANTI NAMA DI SINI (belum dipakai otomatis di teks surat,
                                        // tapi disiapkan kalau kamu mau memakainya lewat JS nanti)
-  music: "audio/romantic-piano.mp3",  // GANTI MUSIK DI SINI (ganti file di folder /audio/)
+  music: "romantic-piano.mp3",  // GANTI MUSIK DI SINI (ganti file di folder /audio/)
                                        // PENTING: jangan pakai "/" di depan (misal "/audio/...")
                                        // karena itu akan dibaca sebagai path dari root server,
                                        // bukan dari folder project ini.
@@ -15,10 +15,10 @@ const CONFIG = {
 // "tilt" opsional: sedikit rotasi (derajat) supaya terasa seperti polaroid ditempel manual.
 const PHOTOS = [
   // GANTI CAPTION DI SINI juga ada di properti "caption" masing-masing foto
-  { src: "images/foto1.jpg", caption: "sebuah momen kecil yang berarti.", tilt: -3 },
-  { src: "images/foto2.jpg", caption: "hari itu, yang selalu aku ingat.", tilt: 2 },
-  { src: "images/foto3.jpg", caption: "senyum yang paling aku suka.", tilt: -2 },
-  { src: "images/foto4.jpg", caption: "kita, di salah satu hari baik.", tilt: 3 }
+  { src: "foto1.jpg", caption: "sebuah momen kecil yang berarti.", tilt: -3 },
+  { src: "foto2.jpg", caption: "hari itu, yang selalu aku ingat.", tilt: 2 },
+  { src: "foto3.jpg", caption: "senyum yang paling aku suka.", tilt: -2 },
+  { src: "foto4.jpg", caption: "kita, di salah satu hari baik.", tilt: 3 }
 ];
 
 /* ============================================================
