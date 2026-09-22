@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>untuk kamu, sayang ❤️</title>
+<meta name="description" content="sebuah surat digital, dibuat khusus untukmu." />
+
+<!-- Google Fonts: Cormorant Garamond untuk judul/surat (terasa seperti tulisan tangan yang elegan),
+     Karla untuk teks pendukung (nyaman dibaca di layar kecil) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ====================================================== -->
+<!-- OVERLAY PEMBUKA: opening + amplop. Menutupi seluruh layar
+     sampai surat selesai "dibuka", lalu memudar dan hilang.   -->
+<!-- ====================================================== -->
+<div id="intro-overlay" aria-live="polite">
+
+  <!-- lapisan dekoratif: partikel cahaya & kelopak bunga -->
+  <div id="particle-field" aria-hidden="true"></div>
+
+  <!-- ADEGAN 1 : OPENING -->
+  <section id="opening-scene" class="scene">
+    <p class="opening-eyebrow">for someone special...</p>
+    <p class="opening-line">ada sesuatu yang ingin aku sampaikan untuk kamu.</p>
+    <button id="open-letter-btn" type="button" aria-label="Buka surat cinta untukmu">
+      <span class="btn-icon" aria-hidden="true">💌</span>
+      <span>Buka Surat</span>
+    </button>
+  </section>
+
+  <!-- ADEGAN 2 : AMPLOP -->
+  <section id="envelope-scene" class="scene" hidden>
+    <div class="envelope" id="envelope">
+      <div class="envelope-back-flap"></div>
+      <div class="envelope-paper" id="envelope-paper">
+        <span class="envelope-paper-line"></span>
+        <span class="envelope-paper-line"></span>
+        <span class="envelope-paper-line short"></span>
+      </div>
+      <div class="envelope-front"></div>
+      <div class="envelope-flap" id="envelope-flap">
+        <span class="wax-seal" aria-hidden="true">♥</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ====================================================== -->
+<!-- KONTROL MUSIK: floating button, muncul setelah surat dibuka -->
+<!-- ====================================================== -->
+<div id="music-control" hidden>
+  <button id="music-toggle" type="button" aria-label="Nyalakan atau matikan musik" aria-pressed="true">
+    <span id="music-icon" aria-hidden="true">🎵</span>
+  </button>
+  <div id="volume-popover" role="group" aria-label="Pengatur volume musik">
+    <input type="range" id="volume-slider" min="0" max="100" value="30" aria-label="Volume musik" />
+  </div>
+</div>
+
+<!-- ====================================================== -->
+<!-- KONTEN UTAMA: surat, kenangan, penutup -->
+<!-- ====================================================== -->
+<main id="content">
+
+  <!-- SECTION SURAT -->
+  <section id="letter" class="section">
+    <div class="letter-card">
+      <h1 class="letter-title reveal" data-delay="0">Selamat Ulang Tahun, Sayang ❤️</h1>
+
+      <div class="letter-body">
+        <p class="reveal" data-delay="120">hai sayang, selamat ulang tahun yaa ❤️</p>
+
+        <p class="reveal" data-delay="180">di hari spesial kamu ini, aku mau bilang banyak banget terima kasih. Terima kasih karena kamu sudah hadir di hidup aku, sudah mau menerima aku apa adanya, dengan semua kekurangan, kelebihan, sifat baik, maupun sifat buruk yang aku punya. Terima kasih juga karena sampai hari ini kamu masih mau menemani aku, masih mau memahami aku, dan masih mau berjalan bareng aku.</p>
+
+        <p class="reveal" data-delay="220">aku sadar mungkin selama kita bersama, aku belum selalu bisa menjadi pasangan yang sempurna. Ada saatnya aku salah, ada saatnya aku bikin kamu kecewa, marah, atau bahkan tanpa sadar bikin kamu sedih. Tapi percayalah, aku selalu punya niat untuk belajar menjadi lebih baik dan menjadi seseorang yang bisa membuat kamu merasa dicintai, dihargai, dan disayangi.</p>
+
+        <p class="reveal" data-delay="260">di umur kamu yang baru ini, aku berdoa semoga Tuhan selalu menjaga kamu di mana pun kamu berada. Semoga kamu selalu diberi kesehatan, umur yang panjang, hati yang tenang, dan langkah yang dimudahkan dalam setiap perjalanan kamu. Semoga segala urusan kamu dilancarkan, rezeki kamu dicukupkan dan dilimpahkan, serta semua impian dan keinginan yang selama ini kamu simpan pelan-pelan bisa terwujud.</p>
+
+        <p class="reveal" data-delay="300">aku juga berdoa semoga kamu selalu dikelilingi orang-orang yang tulus menyayangi kamu. Kalau suatu hari kamu merasa capek, semoga kamu selalu punya tempat untuk pulang dan seseorang yang mau mendengarkan kamu. Kalau kamu sedang sedih, semoga selalu ada alasan kecil yang bisa membuat kamu tersenyum lagi. Dan kalau kamu sedang mengejar sesuatu, semoga kamu diberi kekuatan untuk terus berusaha sampai akhirnya kamu bisa berkata, 'aku berhasil.'</p>
+
+        <p class="reveal" data-delay="340">aku berharap di usia kamu yang baru ini, kamu bisa semakin mengenal diri kamu sendiri, semakin sayang sama diri kamu, dan nggak terlalu keras sama diri sendiri. Kamu nggak harus selalu kuat, nggak harus selalu terlihat baik-baik saja. Kalau suatu saat kamu lelah, istirahatlah. Aku ingin kamu tahu bahwa kamu nggak harus menghadapi semuanya sendirian.</p>
+
+        <p class="reveal" data-delay="380">dan untuk kita, aku berharap semoga kita bisa terus belajar satu sama lain. Semoga kita bisa semakin dewasa dalam menghadapi masalah, semakin terbuka dalam berkomunikasi, dan semakin bisa menjaga perasaan satu sama lain. Aku berharap kita nggak cuma hadir di saat bahagia, tapi juga bisa saling menggenggam ketika keadaan sedang nggak mudah.</p>
+
+        <p class="reveal" data-delay="420">aku nggak bisa menjanjikan semuanya akan selalu sempurna, tapi aku bisa berusaha untuk tetap menghargai kamu, menjaga kepercayaan kamu, dan memberikan yang terbaik yang aku bisa. Semoga kalau memang Tuhan mengizinkan, akan ada lebih banyak ulang tahun kamu yang bisa aku rayakan bersama kamu.</p>
+
+        <p class="reveal" data-delay="460">sekali lagi, selamat ulang tahun, sayang. ❤️</p>
+
+        <p class="reveal" data-delay="500">semoga semua doa baik yang kamu panjatkan hari ini kembali kepada kamu dalam bentuk kebahagiaan yang jauh lebih besar. Semoga tahun ini menjadi tahun yang penuh cerita baik, pencapaian, ketenangan, dan kebahagiaan buat kamu.</p>
+
+        <p class="reveal" data-delay="540">terima kasih sudah menjadi bagian penting dalam hidup aku. terima kasih sudah memilih untuk tetap bersama aku sampai hari ini. Aku sayang kamu, dan semoga kamu selalu bahagia, bukan cuma hari ini, tapi juga di setiap hari setelahnya. ❤️</p>
+      </div>
+    </div>
+    <div class="scroll-hint reveal" data-delay="600" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- SECTION KENANGAN -->
+  <section id="memories" class="section">
+    <h2 class="section-title reveal" data-delay="0">sedikit tentang kita</h2>
+    <div class="polaroid-grid" id="polaroid-grid">
+      <!-- Foto dirender otomatis oleh script.js dari array PHOTOS -->
+    </div>
+  </section>
+
+  <!-- SECTION PENUTUP -->
+  <section id="ending" class="section">
+    <div class="ending-content">
+      <p class="reveal" data-delay="0">dan kalau suatu hari kamu lupa...</p>
+      <p class="reveal" data-delay="250">ingat bahwa pernah ada seseorang yang sangat bersyukur karena pernah menemukan kamu.</p>
+      <p class="ending-highlight reveal" data-delay="550">happy birthday, sayang ❤️</p>
+      <p class="ending-signature reveal" data-delay="800">— dari seseorang yang sayang sama kamu</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- Audio latar. src diisi lewat JavaScript dari CONFIG.music -->
+<audio id="bg-music" loop preload="none"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
